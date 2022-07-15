@@ -1,0 +1,44 @@
+.empty-fields{
+    border: 1px solid red !important;
+}
+
+.products-container{
+    @import 'partials/search-bar';
+
+    .table-panel{
+        width: 100%;
+
+        form{
+            width: 620px;
+            background-color: #D9D9D9;
+            border-radius: 5px;
+
+            @media screen and (max-width: 1000px) {
+                margin-left: 0 !important;
+            };
+                
+            label{
+                font-weight: 700;
+                width: 100%;
+            }
+            input{
+                width: 100%;
+            }
+
+            button{
+                background-color: #0099FF;
+                color: white;
+                width: 200px;
+            }
+        }
+
+    }
+}
+
+.loader{
+    margin-bottom: 10px;
+
+    img{
+        width: 50px !important;
+    }
+}

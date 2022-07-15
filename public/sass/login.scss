@@ -1,0 +1,140 @@
+body{
+    font-family: "Inter-Bold", "Inter", sans-serif !important;
+    color: #383838;
+}
+
+.empty-fields{
+    border: 1px solid red !important;
+}
+
+.nav-bar{
+    border-bottom: 4px solid #0099FF;
+    padding: 10px 50px;
+    height: 10vh;
+
+    @media screen and (max-width: 557px) {
+        padding: 10px 30px;
+    }
+
+    @media screen and (max-width: 485px) {
+        padding: 10px!important;
+    }
+
+    img{
+        width: 100px;
+
+        @media screen and (max-width: 383px) {
+            width: 80px;
+        }
+    }
+
+    a{
+        padding: 10px 35px !important;
+
+        @media screen and (max-width: 557px) {
+            padding: 10px 30px !important;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 485px) {
+            padding: 10px 20px !important;
+        }
+    }
+
+    a.me-3{
+        @media screen and (max-width: 485px) {
+            margin-right: 10px !important;
+        }
+    }
+
+    .active{
+        background-color: #0099FF;
+        color: white;
+    }
+}
+
+.page-content{
+    width: 100%;
+    // background-color: #f9f9f9;
+
+    form{
+        border-radius: 5px;
+        background-color: white;
+
+        @media screen and (max-width: 995px) {
+            width: 700px;
+        };
+
+        @media screen and (max-width: 809px) {
+            width: 600px;
+        };
+
+        @media screen and (max-width: 697px) {
+            width: 500px;
+        };
+
+        @media screen and (max-width: 563px) {
+            width: 400px;
+        };
+
+        @media screen and (max-width: 467px) {
+            width: 350px;
+        }
+
+        @media screen and (max-width: 419px) {
+            width: 300px;
+            padding: 20px !important;
+        }
+
+        @media screen and (max-width: 339px) {
+            width: 260px;
+        }
+
+        h4{
+            font-weight: 700;
+            margin: 0 0 30px 0 !important;
+        }
+
+        img{
+            width: 50%;
+            @media screen and (max-width: 697px) {
+                display: none;
+            };
+        }
+
+        label,h4,input,button,a.btn{
+            width: 100%;
+        }
+
+        label{
+            font-weight: 700;
+        }
+
+        button,a.btn{
+            background-color: #0099FF;
+            color: white;
+
+            &:hover{
+                background-color: lighten(#0099FF, 10%);
+                color: white;
+            }
+        }
+
+        .right-panel{
+            width: 50%;
+            @media screen and (max-width: 697px) {
+                width: 100%;
+                padding-left: 0 !important;
+            };
+        }
+    }
+    
+}
+
+.loader{
+    margin-bottom: 10px;
+
+    img{
+        width: 50px !important;
+    }
+}

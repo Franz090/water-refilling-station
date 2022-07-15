@@ -1,0 +1,136 @@
+@keyframes placeHolderShimmer {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        background-position: -1600px 0
+    }
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        background-position: 1600px 0;
+    }
+}
+
+@keyframes dot1 {
+    0% {
+    background: #f7fafc;
+    }
+
+    50% {
+    background: #cbd5e0;
+    }
+
+    100% {
+    background: #f7fafc;
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translate(0, -100%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+@keyframes breathing {
+    0% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    25% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    60% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    100% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+
+  @-webkit-keyframes breathing {
+    0% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    25% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    60% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    100% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      background:rgba(0,0,0,.0);
+    }
+    100% {
+      background:rgba(0,0,0,.7);
+    }
+  }
+
+  @keyframes modalContentFadeIn {
+    0% {
+      opacity:0;
+      top:-20px;
+    }
+    100% {
+      opacity:1;
+      top:0;
+    }
+  }
+
+
+  @keyframes animated_wave1{
+    0%{
+      background-position-x: 0;
+    }
+    100%{
+      background-position-x: 1000px;
+    }
+  }
+
+  @keyframes animated_wave2{
+    0%{
+      background-position-x: 0;
+    }
+    100%{
+      background-position-x: -1000px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+@import 'variables';
+@import 'extends';
+
+.table-panel{
+    width: 100%;
+    @extend %table_container;
+
+    table{
+        @extend %table;
+        border: 1px solid #F5F5F5 !important;
+        // border: 1px solid !important;
+
+        @media screen and (max-width: 1304px) {
+            min-width: 120% !important;
+        };
+
+        @media screen and (max-width: 1238px) {
+            min-width: 130% !important;
+        };
+
+        @media screen and (max-width: 1100px) {
+            min-width: 150% !important;
+        };
+
+        @media screen and (max-width: 952px) {
+            min-width: 200% !important;
+        };
+
+        @media screen and (max-width: 830px) {
+            min-width: 250% !important;
+        };
+
+        @media screen and (max-width: 750px) {
+            min-width: 300% !important;
+        };
+
+        @media screen and (max-width: 678px) {
+            min-width: 350% !important;
+        };
+
+        @media screen and (max-width: 626px) {
+            min-width: 400% !important;
+        };
+
+        thead{
+            @extend %thead;
+
+            th{
+                @extend %th;
+                color: #055493 !important;
+                background-color: $white;
+                padding: 10px;
+            }
+        }
+
+        th, td{
+            @extend %th_and_td;
+        }
+
+        tbody{
+            @extend %tbody;
+
+            td{
+                @extend %td;
+                color: #242424 !important;
+            }
+        }
+
+        tr{
+            @extend %tr;
+            border: none !important;
+
+            &:nth-child(odd) {
+                background-color: #F5F5F5;
+            }
+
+            &:hover{
+                background-color: rgb(219, 219, 219);
+            }
+        }
+    }
+}

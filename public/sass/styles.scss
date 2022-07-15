@@ -1,0 +1,183 @@
+body{
+    font-family: "Inter-Bold", "Inter", sans-serif !important;
+    color: #383838;
+}
+
+.empty-fields{
+    border: 1px solid red !important;
+}
+
+.c-pointer{
+    cursor: pointer;
+}
+
+.main{
+    min-width: 600px;
+
+    @media screen and (max-width: 600px) {
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+}
+
+.sidebar{
+    width: 15%;
+
+    @media screen and (max-width: 1543px) {
+        width: 17%;
+    }
+
+    @media screen and (max-width: 1465px) {
+        width: 20%;
+    }
+
+    @media screen and (max-width: 1259px) {
+        width: 22%;
+    }
+
+    @media screen and (max-width: 1151px) {
+        width: 25%;
+    }
+
+    @media screen and (max-width: 931px) {
+        width: 28%;
+    }
+
+    @media screen and (max-width: 829px) {
+        width: 30%;
+    }
+
+    @media screen and (max-width: 773px) {
+        width: 33%;
+    }
+
+    @media screen and (max-width: 707px) {
+        width: 35%;
+    }
+
+    @media screen and (max-width: 661px) {
+        width: 38%;
+    }
+
+    @media screen and (max-width: 613px) {
+        width: 40%;
+    }
+
+    @media screen and (max-width: 581px) {
+        width: 45%;
+    }
+
+    .menu{
+        width: 100%; 
+        background: linear-gradient(248deg, #42c0ff 0%, hsl(207, 100%, 27%) 100%);
+        overflow: visible;
+        border-radius: 30px;
+
+        img{
+            width: 150px;
+            align-self: center;
+
+            @media screen and (max-width: 1543px) {
+                width: 130px;
+            }
+
+            @media screen and (max-width: 1259px) {
+                width: 120px;
+            }
+
+            @media screen and (max-width: 1045px) {
+                width: 100px;
+            }
+        }
+
+        a{
+            font-size: 16px;
+
+            i{
+                width: 20px;
+
+                @media screen and (max-width: 1045px) {
+                    width: 18px;
+                }
+            }
+
+            @media screen and (max-width: 1045px) {
+                font-size: 14px;
+            }
+        
+        }
+
+        .curr-active{
+            background-color: #4195CB;
+            border-radius: 5px;
+        }
+    }
+}
+
+.page-content{
+    width: 85%; 
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    @media screen and (max-width: 1543px) {
+        width: 83%;
+    }
+
+    @media screen and (max-width: 1465px) {
+        width: 80%;
+    }
+
+    @media screen and (max-width: 1259px) {
+        width: 78%;
+    }
+
+    @media screen and (max-width: 1151px) {
+        width: 75%;
+    }
+
+    @media screen and (max-width: 931px) {
+        width: 72%;
+    }
+
+    @media screen and (max-width: 829px) {
+        width: 70%;
+    }
+
+    @media screen and (max-width: 773px) {
+        width: 67%;
+    }
+
+    @media screen and (max-width: 707px) {
+        width: 65%;
+    }
+
+    @media screen and (max-width: 661px) {
+        width: 62%;
+    }
+
+    @media screen and (max-width: 613px) {
+        width: 60%;
+    }
+
+    @media screen and (max-width: 581px) {
+        width: 55%;
+    }
+
+    .deliveries-container,
+    .reservations-container,
+    .transactions-container,
+    .products-container{
+        @media screen and (max-width: 1304px) {
+           padding-left: 20px !important;
+        };
+    }
+}
+
+.loader{
+    width: 100%;
+    padding: 100px 20px;
+
+    img{
+        width:70px;
+    }
+}

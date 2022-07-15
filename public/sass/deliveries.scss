@@ -1,0 +1,77 @@
+.deliveries-container{
+
+    @import 'partials/table';
+    @import 'partials/search-bar';
+
+    .table-panel{
+        width: 100%;
+
+        th{
+            text-align: center !important;
+        }
+
+        td{
+            &:not(:nth-child(2)):not(:nth-child(4)){
+                text-align: center !important;
+            }
+
+            button,span{
+                font-size: 13px;
+            }
+
+            button{
+                padding: 5px !important;
+                width: 80% !important;
+                color: white;
+            }
+
+            .btn-pending{
+                background-color: #f67803;
+            }
+
+            .btn-cancel{
+                // background-color: rgb(161, 0, 0);
+                background-color: #b2b2b2;
+            }
+
+            .btn-completed{
+                background-color: rgb(2, 117, 2);
+            }
+        }
+
+        th,td{
+            // border: 1px solid black !important;
+            &:nth-child(1){
+                width: 8%;
+            }
+            &:nth-child(2){
+                width: 12%;
+            }
+            &:nth-child(3){
+                width: 12%;
+            }
+            &:nth-child(4){
+                width: 20%;
+            }
+            &:nth-child(5){
+                width: 14%;
+            }
+            &:nth-child(6){
+                width: 8%;
+            }
+            &:nth-child(7){
+                width: 8%;
+            }
+            &:nth-child(8){
+                width: 8%;
+            }
+            &:nth-child(9){
+                width: 10%;
+            }
+        }
+
+        tbody{
+            max-height: 65vh !important;
+        }
+    }
+}

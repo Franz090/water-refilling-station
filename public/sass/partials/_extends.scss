@@ -1,0 +1,159 @@
+%boxShadow{
+	box-shadow: -2px 5px 17px -15px rgba(109,109,109,0.75);
+    -webkit-box-shadow: -2px 5px 17px -15px rgba(109,109,109,0.75);
+    -moz-box-shadow: -2px 5px 17px -15px rgba(109,109,109,0.75);
+}
+
+%table_scrollbar1 {
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+        background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #FFF;
+        background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from($scrollbars), to($scrollbars), color-stop(.6, $scrollbars))
+    }
+}
+
+%table_scrollbar2 {
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+        background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar {
+        // width: 10px;
+        width: 0.5%;
+        background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #FFF;
+        background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from($scrollbars), to($scrollbars), color-stop(.6, $scrollbars))
+    }
+}
+
+%table_container{
+    overflow-x: auto;
+    overflow-y: hidden;
+    @extend %table_scrollbar1;
+    position: relative;
+    transition: all 0.2s;
+    background-color: $white;
+}
+
+%table{
+    table-layout: fixed;
+    width: 100%;
+    display: table;
+    font-size: 14px;
+}
+
+%thead{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+%th{
+    color: white;
+    border: none;
+}
+
+%th_and_td{
+    text-align: left;
+    padding: 8px;
+    word-wrap: break-word;
+}
+
+%tbody{
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    @extend %table_scrollbar2;
+}
+
+%td{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border: none;
+}
+
+%tr{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-bottom: $border;
+}
+
+%tfoot{
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+%tfoot_tr{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    padding: 20px;
+}
+
+%tfoot_tr_td{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+    border: $border;
+}
+
+//////////////////////////////////////////////
+//             SKELETON LOADER              //
+//////////////////////////////////////////////
+%card-skeleton{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    transition: all .4s ease-in-out;
+    backface-visibility: hidden;
+    background: #fff;
+    // z-index: 10;
+    opacity: 1;
+    overflow: hidden;
+}
+
+%animated-background{
+    will-change: transform;
+    animation: placeHolderShimmer 2s linear infinite forwards;
+    backface-visibility: hidden;
+    background: #e6e6e6;
+    background: linear-gradient(90deg, #eee 8%, #ddd 18%, #eee 80%);
+    background-size: 1600px 1004px;
+    height: 100%;
+    position: relative;
+}
+
+%skeleton.hidden{
+    transition: all .4s ease-in-out;
+    opacity: 0;
+    height: 0;
+    padding: 0
+}
+
+%skel-mask{
+    background: #e5e5e5;
+    position: absolute;
+    // z-index: 200;
+}
+
